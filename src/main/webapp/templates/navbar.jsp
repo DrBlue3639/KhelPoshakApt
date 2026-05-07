@@ -1,0 +1,97 @@
+<%-- 
+    Document   : navbar
+    Created on : May 6, 2026, 10:11:05 PM
+    Author     : ACER
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<div class="navContainer">
+
+  <!-- LOGO -->
+  <a href="${pageContext.request.contextPath}/homeS">
+    <div class="logo">
+      <img
+        src="${pageContext.request.contextPath}/resources/Logo_heart-pulse-solid.png"
+        width="35px"
+      />
+      <div class="logotext">
+        <b>KhelPoshak</b>
+      </div>
+    </div>
+  </a>
+
+  <!-- NAV -->
+  <nav class="navigation">
+    <ul>
+
+      <li>
+        <a href="${pageContext.request.contextPath}/homeS"
+           class="${param.active == 'home' ? 'active' : ''}">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="${pageContext.request.contextPath}/products"
+           class="${param.active == 'products' ? 'active' : ''}">
+          All Products
+        </a>
+      </li>
+
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+
+      <!-- LOGGED IN -->
+      <c:if test="${not empty sessionScope.user}">
+
+        <li class="welcomeText">
+          Welcome, ${sessionScope.user.fullName}
+        </li>
+
+        <li>
+          <a href="${pageContext.request.contextPath}/CartS"
+             class="${param.active == 'cart' ? 'active' : ''}">
+            Cart
+          </a>
+        </li>
+
+        <li>
+          <a href="${pageContext.request.contextPath}/OrderHistoryS"
+             class="${param.active == 'orders' ? 'active' : ''}">
+            My Orders
+          </a>
+        </li>
+
+        <li>
+          <a href="${pageContext.request.contextPath}/LogoutS">
+            Logout
+          </a>
+        </li>
+
+      </c:if>
+
+      <!-- NOT LOGGED IN -->
+      <c:if test="${empty sessionScope.user}">
+
+        <li id="Login">
+          <a href="${pageContext.request.contextPath}/pages/login.jsp"
+             class="${param.active == 'login' ? 'active' : ''}"
+             style="color: rgb(21, 88, 246)">
+            Login
+          </a>
+        </li>
+
+        <li>
+          <a href="${pageContext.request.contextPath}/pages/register.jsp">
+            <button>Register</button>
+          </a>
+        </li>
+
+      </c:if>
+
+    </ul>
+  </nav>
+
+</div>

@@ -1,0 +1,122 @@
+@import "../css/main_css.css";
+
+/* Fix navbar overlap */
+/*.pageContent {
+  margin-top: 100px;
+}*/
+
+/* Header */
+.pageHeader {
+  padding: 40px 80px 20px;
+}
+
+.pageHeader h1 {
+  font-size: 28px;
+}
+
+.pageHeader p {
+  color: #666;
+}
+
+/* Empty */
+.emptyState {
+  text-align: center;
+  margin-top: 80px;
+  color: #777;
+}
+
+/* Container */
+.ordersContainer {
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Bill Card */
+.billCard {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.billHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoiceText {
+  color: #666;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: rgb(21, 88, 246);
+  font-weight: 600;
+}
+
+/* Info */
+.billInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Shipping */
+.shippingBox {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8faff;
+  border-radius: 10px;
+}
+
+/* Table */
+.billTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.billTable th {
+  background: #f4f6fb;
+  padding: 12px;
+  text-align: left;
+}
+
+.billTable td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+/* Total */
+.totalRow td {
+  font-weight: bold;
+  border-top: 2px solid #ccc;
+}
+
+/* Footer */
+.billFooter {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+/* Bottom links */
+.actionLinks {
+  text-align: center;
+  margin: 40px;
+}
+
+.actionLinks a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(21, 88, 246);
+  font-weight: 600;
+}

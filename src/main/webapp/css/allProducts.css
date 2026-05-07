@@ -1,0 +1,161 @@
+@import "../css/main_css.css";
+
+/* Header */
+.pageHeader {
+  padding: 40px 80px 10px;
+}
+
+.pageHeader h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.pageHeader p {
+  color: #666;
+}
+
+/* Filter container */
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Search */
+.searchForm {
+  display: flex;
+}
+
+.searchForm input {
+  padding: 12px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.searchForm button {
+  padding: 12px 20px;
+  border: none;
+  background: rgb(21, 88, 246);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+/* Filters */
+.filterForm select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filterForm button {
+  padding: 10px 18px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product section */
+.productSection {
+  padding: 30px 80px;
+}
+
+/* Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Card */
+.product-card {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image placeholder */
+.product-img {
+  height: 160px;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.team {
+  color: #777;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Cart form */
+.cartForm {
+  margin-top: 10px;
+}
+
+.formRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.formRow select,
+.formRow input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.cartBtn {
+  width: 100%;
+  padding: 10px;
+  background: rgb(21, 88, 246);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cartBtn:hover {
+  background: rgb(18, 77, 216);
+}
+
+/* Empty message */
+.emptyMsg {
+  text-align: center;
+  margin-top: 50px;
+  color: #777;
+}
+
+/* Back */
+.backContainer {
+  text-align: center;
+  margin: 30px;
+}
+
+.backContainer a {
+  color: rgb(21, 88, 246);
+  font-weight: bold;
+  text-decoration: none;
+}

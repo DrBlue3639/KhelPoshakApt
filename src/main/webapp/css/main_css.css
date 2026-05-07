@@ -1,0 +1,428 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(21, 88, 246) */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* font-size: larger; */
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* navigation container */
+.navContainer {
+  display: flex;
+  align-items: start;
+  /* background-color: rgb(21, 88, 246); */
+  /* border: rgb(255, 0, 0) solid 5px; */
+  padding: 15px;
+  padding-inline: 100px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  /*position: fixed;*/
+  width: 90%;
+  border-bottom: rgb(224, 224, 224) solid 3px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.navigation a {
+  color: black;
+}
+
+.navigation a:hover {
+  color: rgb(21, 88, 246);
+}
+
+.navigation button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(21, 88, 246);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  /* border: white solid 2px; */
+}
+.navigation button:hover {
+  background-color: rgb(21, 79, 214);
+}
+
+#introductionContainer {
+  background-color: rgb(21, 88, 246);
+  /* border: red solid 2px; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* padding-inline: 50px; */
+  padding: 100px 50px;
+}
+
+/* for Search bar  */
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.searchbar input {
+  width: 350px;
+  padding: 12px 15px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.searchbar button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchbar button:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+/* .login-register-btns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+} */
+
+/* .login-register-btns .registerBtn,
+.loginBtn {
+  width: 85px;
+  height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+/* .loginBtn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(21, 88, 246);
+  border: none;
+} */
+
+/* .loginBtn:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.registerBtn:hover {
+  background-color: rgb(18, 77, 216);
+}
+
+.registerBtn {
+  background-color: rgb(21, 88, 246);
+  color: white;
+  border: white solid 2px;
+} */
+
+.mainText {
+  color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------- appended css ---------------------------------------- */
+/* ===== SHOP CONTROLS ===== */
+.shopControls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* .searchForm {
+  display: flex;
+} */
+
+/* .searchForm input {
+  padding: 12px 15px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #ccc;
+  width: 300px;
+} */
+
+/* .searchForm button {
+  padding: 12px 20px;
+  border: none;
+  background: rgb(21, 88, 246);
+  color: white;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+} */
+
+.filterForm select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filterForm button {
+  /* border: solid 2px rgb(255, 255, 255); */
+  padding: 12px;
+  padding-inline: 25px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-style: none;
+}
+
+/* ===== SERVICES (MATCH IMAGE) ===== */
+.servicesSection {
+  background-color: #f5f8ff;
+  padding: 60px 20px;
+}
+
+.managementFeatures {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.FeatureCard {
+  background: white;
+  width: 260px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.FeatureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== PRODUCTS ===== */
+.productSection {
+  background-color: #eef2f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.productSection h2 {
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* fake image placeholder */
+.product-img {
+  height: 160px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* text styles */
+.product-card .team {
+  color: gray;
+  font-size: 14px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* button */
+.buyBtn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: rgb(21, 88, 246);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.buyBtn:hover {
+  background: rgb(18, 77, 216);
+}
+/* -----------------------------------------ends here -------------------------------------------- */
+
+.shopSection {
+  display: flex;
+  flex-direction: column;
+  /* border: red solid 2px; */
+  text-align: center;
+  padding: 50px;
+  gap: 15px;
+}
+
+/* .servicelogo img {
+  width: 100px;
+} */
+
+/* .serviceText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.sportGrid {
+  display: flex;
+}
+
+.sportCard {
+  display: flex;
+  flex-direction: column;
+  /* border: black solid 2px; */
+  padding: 15px;
+  margin: 10px;
+  gap: 25px;
+  border-radius: 20px;
+  width: 60vh;
+  box-shadow: rgb(215, 215, 215) 1px 1px 5px;
+  height: 300px;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #1a222f; /* Dark navy background */
+  color: #ffffff;
+  padding: 60px 8% 30px 8%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Logo Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo i {
+  color: #5da8ff; /* Pulse icon color */
+  font-size: 24px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-col p {
+  color: #94a3b8; /* Muted text color */
+  line-height: 1.6;
+  font-size: 14px;
+  max-width: 320px;
+}
+
+/* Column Headers */
+.footer-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Links and Lists */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Contact Info */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.contact-item i {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+/* Bottom Section */
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #2d3748;
+  margin: 40px 0 30px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

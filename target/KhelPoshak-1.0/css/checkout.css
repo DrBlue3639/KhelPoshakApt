@@ -1,0 +1,127 @@
+@import "../css/main_css.css";
+
+
+/* Prevent navbar overlap */
+.pageContent {
+  margin-top: 50px;
+}
+
+/* Header */
+.pageHeader {
+  padding-inline: 85px;
+}
+
+.pageHeader h1 {
+  font-size: 28px;
+}
+
+.pageHeader p {
+  color: #666;
+}
+
+/* Error */
+.errorBox {
+  margin: 20px 80px;
+  padding: 15px;
+  background: #ffe5e5;
+  color: red;
+  border-radius: 10px;
+}
+
+/* Layout */
+.checkoutContainer {
+  display: flex;
+  gap: 40px;
+  padding: 30px 80px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.summaryCard,
+.formCard {
+  flex: 1;
+  min-width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Table */
+.checkoutTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.checkoutTable th {
+  background: #f4f6fb;
+  padding: 12px;
+  text-align: left;
+}
+
+.checkoutTable td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+/* Total */
+.totalBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Form */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Button */
+.checkoutBtn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(21, 88, 246);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkoutBtn:hover {
+  background-color: rgb(18, 77, 216);
+}
+
+/* Back */
+.backLink {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(21, 88, 246);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}

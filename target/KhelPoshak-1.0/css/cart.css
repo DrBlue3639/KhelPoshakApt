@@ -1,0 +1,130 @@
+@import "../css/main_css.css";
+
+/* Header */
+.pageHeader {
+  padding: 120px 80px 10px;
+}
+
+.pageHeader h1 {
+  font-size: 28px;
+}
+
+.pageHeader p {
+  color: #666;
+}
+
+/* Empty cart */
+.emptyCart {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.primaryBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: rgb(21, 88, 246);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Container */
+.cartContainer {
+  padding: 30px 80px;
+}
+
+/* Table */
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.cartTable th {
+  background: #f4f6fb;
+  padding: 15px;
+  text-align: left;
+}
+
+.cartTable td {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* Product name */
+.productName {
+  font-weight: 600;
+}
+
+/* Quantity form */
+.qtyForm {
+  display: flex;
+  gap: 8px;
+}
+
+.qtyForm input {
+  width: 60px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.qtyForm button {
+  padding: 6px 10px;
+  border: none;
+  background: rgb(21, 88, 246);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Remove */
+.removeBtn {
+  color: red;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Subtotal */
+.subtotal {
+  font-weight: bold;
+}
+
+/* Summary */
+.cartSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Total */
+.totalBox {
+  font-size: 18px;
+}
+
+/* Buttons */
+.checkoutBtn {
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.secondaryBtn {
+  margin-left: 15px;
+  padding: 12px 20px;
+  background: #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Back */
+.backContainer {
+  text-align: center;
+  margin: 30px;
+}

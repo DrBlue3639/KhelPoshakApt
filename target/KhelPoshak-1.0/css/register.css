@@ -1,0 +1,76 @@
+/* Container */
+.registerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Card */
+.registerCard {
+  margin-top: 50px;
+  box-shadow: rgb(215, 215, 215) 1px 1px 5px;
+  border-radius: 15px;
+  width: 400px;
+  padding: 35px;
+}
+
+/* Header */
+.registerHeader {
+  text-align: center;
+  font-size: 25px;
+}
+
+.registerHeader img {
+  width: 75px;
+}
+
+.registerHeader p {
+  padding-top: 10px;
+  color: rgb(74, 85, 101);
+  font-size: 18px;
+}
+
+/* Form */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs */
+.registerForm input {
+  padding: 15px;
+  border-radius: 10px;
+  border: rgb(173, 174, 187) solid 1px;
+  font-size: 15px;
+}
+
+/* Button */
+.registerBtn {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(21, 88, 246);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.registerBtn:hover {
+  background-color: rgb(21, 79, 214);
+  transition: 300ms;
+}
+
+/* Login text */
+.loginText {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.loginText a {
+  color: rgb(21, 88, 246);
+  font-weight: 500;
+}

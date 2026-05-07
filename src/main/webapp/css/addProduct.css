@@ -1,0 +1,90 @@
+/* Container */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Card */
+.formCard {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.formCard h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: rgb(21, 88, 246);
+}
+
+/* Form layout */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Inputs */
+.formGroup input,
+.formGroup select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: rgb(21, 88, 246);
+  outline: none;
+  box-shadow: 0 0 5px rgba(21, 88, 246, 0.3);
+}
+
+/* Row layout for stock */
+.formRow {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button */
+.submitBtn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(21, 88, 246);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: rgb(18, 77, 216);
+}
+
+/* Back link */
+.backLink {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(21, 88, 246);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}

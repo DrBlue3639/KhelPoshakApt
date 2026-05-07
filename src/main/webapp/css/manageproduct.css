@@ -1,0 +1,126 @@
+@import "../css/Admindashboard.css";
+
+/* PAGE BACKGROUND */
+/*body {
+  background-color: #f5f8ff;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+
+/* HEADER */
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.pageHeader h1 {
+  margin: 0;
+}
+
+.pageHeader p {
+  color: #666;
+  margin-top: 5px;
+}
+
+/* ADD BUTTON */
+.addBtn {
+  background-color: #0a0f2c;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: rgb(21, 88, 246);
+}
+
+/* TABLE CARD */
+.tableCard {
+  margin: 0 60px 40px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADER */
+.product-table thead {
+  background-color: #f0f4ff;
+}
+
+.product-table th {
+  text-align: left;
+  padding: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* BODY */
+.product-table td {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* ROW HOVER */
+.product-table tbody tr:hover {
+  background-color: #f9fbff;
+}
+
+/* STOCK TAG */
+.stock {
+  background-color: #eef3ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* EDIT */
+.editBtn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #e6f0ff;
+  color: rgb(21, 88, 246);
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.editBtn:hover {
+  background-color: rgb(21, 88, 246);
+  color: white;
+}
+
+/* DELETE */
+.deleteBtn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #ffe6e6;
+  color: #d11a2a;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: #d11a2a;
+  color: white;
+}
