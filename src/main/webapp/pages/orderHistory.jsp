@@ -11,6 +11,10 @@
     </head>
 
     <body>
+        
+        <jsp:include page="/templates/navbar.jsp">
+            <jsp:param name="active" value="orders"/>
+        </jsp:include>
 
         <div class="pageContent">
 

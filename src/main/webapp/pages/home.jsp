@@ -20,7 +20,7 @@
 
             <div class="BigLogo">
                 <img
-                    src="${pageContext.request.contextPath}/resources/Logo_heart-pulse-regularWhite.png"
+                    src="${pageContext.request.contextPath}/resources/khelPoshakWhitelogo.png"
                     alt="logo"
                     width="100px"
                     />
@@ -84,13 +84,13 @@
                         <p class="team">${p.team}</p>
                         <p class="price">$${p.price}</p>
 
-                        <!-- ✅ ALWAYS ADD TO CART (Correct Backend Logic) -->
+                        <!-- ALWAYS ADD TO CART (Correct Backend Logic) -->
                         <form action="${pageContext.request.contextPath}/CartS" method="post">
                             <input type="hidden" name="action" value="add">
                             <input type="hidden" name="product_id" value="${p.productId}">
 
-                            <select name="size" required>
-                                <option value="">Select Size</option>
+                            <select name="size" required class="sizeSelection">
+                                <option value="">Size</option>
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>

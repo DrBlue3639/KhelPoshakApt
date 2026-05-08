@@ -45,7 +45,7 @@
             </div>-->
         <!-- NAVBAR TEMPLATE -->
         <jsp:include page="/templates/navbar.jsp">
-            <jsp:param name="active" value="home"/>
+            <jsp:param name="active" value="products"/>
         </jsp:include>
 
         <!-- PAGE HEADER -->

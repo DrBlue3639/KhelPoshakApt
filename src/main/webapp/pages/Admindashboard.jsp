@@ -40,8 +40,8 @@
               </nav>
             </div>-->
         <!-- NAVBAR TEMPLATE -->
-        <jsp:include page="/templates/navbar.jsp">
-            <jsp:param name="active" value="home"/>
+        <jsp:include page="/templates/adminNavbar.jsp">
+            <jsp:param name="active" value="dashboard"/>
         </jsp:include>
 
         <!-- main Admin Panel Body  -->
