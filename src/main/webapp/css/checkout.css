@@ -1,11 +1,5 @@
 @import "../css/main_css.css";
 
-
-/* Prevent navbar overlap */
-.pageContent {
-  margin-top: 50px;
-}
-
 /* Header */
 .pageHeader {
   padding-inline: 85px;

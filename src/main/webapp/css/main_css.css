@@ -5,61 +5,13 @@
   padding: 0;
   text-decoration: none;
   /* font-size: larger; */
+  /*border: solid 1px red;*/
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* display: flex;
   flex-direction: column; */
-}
-
-/* navigation container */
-.navContainer {
-  display: flex;
-  align-items: start;
-  /* background-color: rgb(21, 88, 246); */
-  /* border: rgb(255, 0, 0) solid 5px; */
-  padding: 15px;
-  padding-inline: 100px;
-  justify-content: space-between;
-  background-color: #ffffff;
-  /*position: fixed;*/
-  width: 90%;
-  border-bottom: rgb(224, 224, 224) solid 3px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: black;
-}
-
-.navigation ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  align-items: center;
-}
-
-.navigation a {
-  color: black;
-}
-
-.navigation a:hover {
-  color: rgb(21, 88, 246);
-}
-
-.navigation button {
-  cursor: pointer;
-  padding: 10px;
-  background-color: rgb(21, 88, 246);
-  color: white;
-  border-radius: 5px;
-  border: none;
-  /* border: white solid 2px; */
-}
-.navigation button:hover {
-  background-color: rgb(21, 79, 214);
+  background-color: #f5f8ff;
 }
 
 #introductionContainer {
@@ -68,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* padding-inline: 50px; */
+  /*padding-inline: 50px;*/ 
   padding: 100px 50px;
 }
 
