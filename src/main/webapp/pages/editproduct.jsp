@@ -9,7 +9,10 @@
     </head>
 
     <body>
-
+        <jsp:include page="/templates/adminNavbar.jsp">
+            <jsp:param name="active" value="manageProducts"/>
+        </jsp:include>
+        
         <div class="formContainer">
 
             <div class="formCard">

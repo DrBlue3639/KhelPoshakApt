@@ -37,7 +37,7 @@
             </div>-->
         <!-- NAVBAR TEMPLATE -->
         <jsp:include page="/templates/navbar.jsp">
-            <jsp:param name="active" value="home"/>
+            <jsp:param name="active" value="login"/>
         </jsp:include>
 
         <!-- main login part starts -->
@@ -45,7 +45,7 @@
         <div class="loginContainer">
             <div class="loginCard">
                 <div class="loginHeader">
-                    <img src="/resources/Logo_heart-pulse-solid.png" alt="HeartPulse" />
+                    <img src="${pageContext.request.contextPath}/resources/khelPoshakBlacklogo.png" alt="KhelPoshakLogo" />
                     <h3><b>Login to Your Account</b></h3>
                     <p>Enter your credentials to continue</p>
                 </div>

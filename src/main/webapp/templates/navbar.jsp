@@ -50,14 +50,16 @@
             </li>
 
             <li>
-                <a href="#">
-                    About
+                <a href="${pageContext.request.contextPath}/pages/about.jsp"
+                    class="${param.active == 'aboutus' ? 'active' : ''}">
+                    About Us
                 </a>
             </li>
 
             <li>
-                <a href="#">
-                    Contact
+                <a href="${pageContext.request.contextPath}/pages/contact.jsp"
+                    class="${param.active == 'contactus' ? 'active' : ''}">
+                    Contact Us
                 </a>
             </li>
 

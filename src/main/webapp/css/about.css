@@ -1,0 +1,163 @@
+
+.aboutContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.aboutHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutHeader h1 {
+    font-size: 40px;
+    color: #0d47a1;
+}
+
+.aboutHeader p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* ===== ABOUT CARDS ===== */
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.aboutCard {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.aboutCard:hover {
+    transform: translateY(-6px);
+}
+
+.aboutCard h2 {
+    color: #1565c0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.aboutCard p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* icon placeholder */
+.cardIcon {
+    width: 40px;
+    height: 40px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ===== STATS SECTION ===== */
+
+.statsSection {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.statCard {
+    background: #1565c0;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.statCard:hover {
+    transform: scale(1.05);
+}
+
+.statCard h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* ===== TEAM SECTION ===== */
+
+.teamSection {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.teamSection h2 {
+    font-size: 32px;
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+.teamCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.teamCard {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.teamCard:hover {
+    transform: translateY(-6px);
+}
+
+.teamIcon {
+    width: 50px;
+    height: 50px;
+    background: #e3f2fd;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* ===== CTA SECTION ===== */
+
+.aboutCTA {
+    margin-top: 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    padding: 40px;
+    border-radius: 16px;
+    color: white;
+}
+
+.aboutCTA h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.aboutCTA p {
+    margin-bottom: 20px;
+}
+
+.shopBtn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fff;
+    color: #1565c0;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.shopBtn:hover {
+    background: #0d47a1;
+    color: #fff;
+}

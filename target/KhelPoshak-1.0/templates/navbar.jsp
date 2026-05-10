@@ -5,93 +5,115 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<link rel="stylesheet"
+      href="${pageContext.request.contextPath}/css/navbar.css"/>
 
 <div class="navContainer">
 
-  <!-- LOGO -->
-  <a href="${pageContext.request.contextPath}/homeS">
-    <div class="logo">
-      <img
-        src="${pageContext.request.contextPath}/resources/Logo_heart-pulse-solid.png"
-        width="35px"
-      />
-      <div class="logotext">
-        <b>KhelPoshak</b>
-      </div>
-    </div>
-  </a>
+    <!-- LOGO -->
+    <a href="${pageContext.request.contextPath}/homeS">
 
-  <!-- NAV -->
-  <nav class="navigation">
-    <ul>
+        <div class="logo">
 
-      <li>
-        <a href="${pageContext.request.contextPath}/homeS"
-           class="${param.active == 'home' ? 'active' : ''}">
-          Home
-        </a>
-      </li>
+            <img
+                src="${pageContext.request.contextPath}/resources/khelPoshakBlacklogo.png"
+                width="35px"
+                />
 
-      <li>
-        <a href="${pageContext.request.contextPath}/products"
-           class="${param.active == 'products' ? 'active' : ''}">
-          All Products
-        </a>
-      </li>
+            <div class="logotext">
+                <b>KhelPoshak</b>
+            </div>
 
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+        </div>
 
-      <!-- LOGGED IN -->
-      <c:if test="${not empty sessionScope.user}">
+    </a>
 
-        <li class="welcomeText">
-          Welcome, ${sessionScope.user.fullName}
-        </li>
+    <!-- NAVIGATION -->
+    <nav class="navigation">
 
-        <li>
-          <a href="${pageContext.request.contextPath}/CartS"
-             class="${param.active == 'cart' ? 'active' : ''}">
-            Cart
-          </a>
-        </li>
+        <ul>
 
-        <li>
-          <a href="${pageContext.request.contextPath}/OrderHistoryS"
-             class="${param.active == 'orders' ? 'active' : ''}">
-            My Orders
-          </a>
-        </li>
+            <li>
+                <a href="${pageContext.request.contextPath}/homeS"
+                   class="${param.active == 'home' ? 'active' : ''}">
+                    Home
+                </a>
+            </li>
 
-        <li>
-          <a href="${pageContext.request.contextPath}/LogoutS">
-            Logout
-          </a>
-        </li>
+            <li>
+                <a href="${pageContext.request.contextPath}/products"
+                   class="${param.active == 'products' ? 'active' : ''}">
+                    All Products
+                </a>
+            </li>
 
-      </c:if>
+            <li>
+                <a href="${pageContext.request.contextPath}/pages/about.jsp"
+                    class="${param.active == 'aboutus' ? 'active' : ''}">
+                    About Us
+                </a>
+            </li>
 
-      <!-- NOT LOGGED IN -->
-      <c:if test="${empty sessionScope.user}">
+            <li>
+                <a href="${pageContext.request.contextPath}/pages/contact.jsp"
+                    class="${param.active == 'contactus' ? 'active' : ''}">
+                    Contact Us
+                </a>
+            </li>
 
-        <li id="Login">
-          <a href="${pageContext.request.contextPath}/pages/login.jsp"
-             class="${param.active == 'login' ? 'active' : ''}"
-             style="color: rgb(21, 88, 246)">
-            Login
-          </a>
-        </li>
+            <!-- LOGGED IN -->
+            <c:if test="${not empty sessionScope.user}">
 
-        <li>
-          <a href="${pageContext.request.contextPath}/pages/register.jsp">
-            <button>Register</button>
-          </a>
-        </li>
+                <li class="welcomeText">
+                    Welcome, ${sessionScope.user.fullName}
+                </li>
 
-      </c:if>
+                <li>
+                    <a href="${pageContext.request.contextPath}/CartS"
+                       class="${param.active == 'cart' ? 'active' : ''}">
+                        Cart
+                    </a>
+                </li>
 
-    </ul>
-  </nav>
+                <li>
+                    <a href="${pageContext.request.contextPath}/OrderHistoryS"
+                       class="${param.active == 'orders' ? 'active' : ''}">
+                        My Orders
+                    </a>
+                </li>
+
+                <li>
+                    <a href="${pageContext.request.contextPath}/LogoutS">
+                        Logout
+                    </a>
+                </li>
+
+            </c:if>
+
+            <!-- NOT LOGGED IN -->
+            <c:if test="${empty sessionScope.user}">
+
+                <li>
+                    <a href="${pageContext.request.contextPath}/pages/login.jsp"
+                       class="${param.active == 'login' ? 'active' : ''}">
+                        Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="${pageContext.request.contextPath}/pages/register.jsp">
+                        <button>
+                            Register
+                        </button>
+                    </a>
+                </li>
+
+            </c:if>
+
+        </ul>
+
+    </nav>
 
 </div>

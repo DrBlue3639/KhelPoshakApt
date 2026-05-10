@@ -11,6 +11,7 @@ com\khel\khelposhak\controller\AllProductsServlet.class
 com\khel\khelposhak\utils\ValidationUtil.class
 com\khel\khelposhak\dao\RegisterDao.class
 com\khel\khelposhak\model\CartModel.class
+com\khel\khelposhak\model\ContactModel.class
 com\khel\khelposhak\model\CategoryModel.class
 com\khel\khelposhak\model\ProductModel.class
 com\khel\khelposhak\resources\JakartaEE11Resource.class
@@ -21,6 +22,7 @@ com\khel\khelposhak\controller\HomeServlet.class
 com\khel\khelposhak\controller\OrderHistoryServlet.class
 com\khel\khelposhak\model\UserModel.class
 com\khel\khelposhak\controller\CartServlet.class
+com\khel\khelposhak\controller\ContactServlet.class
 com\khel\khelposhak\databaseConnection\DatabaseConnection.class
 com\khel\khelposhak\controller\CheckoutServlet.class
 com\khel\khelposhak\model\OrderItemModel.class

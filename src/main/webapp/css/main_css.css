@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /*padding-inline: 50px;*/ 
+  /*padding-inline: 50px;*/
   padding: 100px 50px;
 }
 
@@ -220,6 +220,7 @@ body {
 
 /* button */
 .buyBtn {
+    width: 100%;
   display: inline-block;
   padding: 10px 15px;
   background: rgb(21, 88, 246);
@@ -231,13 +232,29 @@ body {
 
 .buyBtn:hover {
   background: rgb(18, 77, 216);
+  cursor: pointer;
+}
+
+/* SIZE DROPDOWN */
+
+.sizeSelection {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+
+  /*border: 1px solid #d1d5db;*/
+  border-radius: 8px;
+  /*background-color: white;*/
+  /*font-size: 14px;*/
+  /*font-weight: 500;*/
+  cursor: pointer;
 }
 /* -----------------------------------------ends here -------------------------------------------- */
 
 .shopSection {
   display: flex;
   flex-direction: column;
-  /* border: red solid 2px; */
+   /*border: red solid 2px;*/ 
   text-align: center;
   padding: 50px;
   gap: 15px;
@@ -255,20 +272,46 @@ body {
 
 .sportGrid {
   display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .sportCard {
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* border: black solid 2px; */
-  padding: 15px;
-  margin: 10px;
-  gap: 25px;
-  border-radius: 20px;
-  width: 60vh;
-  box-shadow: rgb(215, 215, 215) 1px 1px 5px;
-  height: 300px;
-  justify-content: center;
+  justify-content: end;
+  padding: 20px;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgb(200, 200, 200) 2px 2px 10px;
+}
+
+/* FOOTBALL */
+.footballCard {
+  background-image: url("../resources/messi.png");
+}
+
+/* CRICKET */
+.cricketCard {
+  background-image: url("../resources/lebronjames.png");
+}
+
+/* BASKETBALL */
+.basketballCard {
+  background-image: url("../resources/conor.png");
+}
+
+.sportCard h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sportCard p {
+  font-size: 15px;
 }
 
 .footer {

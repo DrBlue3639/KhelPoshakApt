@@ -53,7 +53,7 @@
         <div class="registerContainer">
             <div class="registerCard">
                 <div class="registerHeader">
-                    <img src="../resources/Logo_heart-pulse-solid.png" alt="HeartPulse" />
+                    <img src="${pageContext.request.contextPath}/resources/khelPoshakBlacklogo.png" alt="KhelPoshakLogo" />
                     <h3><b>Create an Account</b></h3>
                     <p>Fill in the details to get started</p>
                 </div>

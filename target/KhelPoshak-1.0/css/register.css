@@ -2,7 +2,7 @@
 .registerContainer {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  /*padding: 50px;*/
 }
 
 /* Card */
@@ -10,7 +10,7 @@
   margin-top: 50px;
   box-shadow: rgb(215, 215, 215) 1px 1px 5px;
   border-radius: 15px;
-  width: 400px;
+  width: 500px;
   padding: 35px;
 }
 

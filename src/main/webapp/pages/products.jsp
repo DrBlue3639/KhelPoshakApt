@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/manageproduct.css" />
 
-        <title>Manage Products</title>
+        <title>Edit Products</title>
     </head>
 
     <body>
@@ -44,8 +44,8 @@
               </nav>
             </div>-->
         <!-- NAVBAR TEMPLATE -->
-        <jsp:include page="/templates/navbar.jsp">
-            <jsp:param name="active" value="products"/>
+        <jsp:include page="/templates/adminNavbar.jsp">
+            <jsp:param name="active" value="manageProducts"/>
         </jsp:include>
 
         <!-- PAGE HEADER -->

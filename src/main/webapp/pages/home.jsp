@@ -117,23 +117,26 @@
 
             <div class="sportGrid">
 
-                <div class="sportCard">
+                <div class="sportCard footballCard">
                     <h3>Football</h3>
                     <p>Browse Football jerseys</p>
                 </div>
 
-                <div class="sportCard">
+                <div class="sportCard cricketCard">
                     <h3>Cricket</h3>
                     <p>Browse Cricket jerseys</p>
                 </div>
 
-                <div class="sportCard">
+                <div class="sportCard basketballCard">
                     <h3>Basketball</h3>
                     <p>Browse Basketball jerseys</p>
                 </div>
 
             </div>
         </div>
+
+        <!--footer from template:  used directive include tag because of static HTML-->
+        <%@include file="/templates/footer.html" %>
 
     </body>
 </html>

@@ -1,0 +1,86 @@
+@import "../css/main_css.css";
+
+.contactContainer {
+    padding: 40px 80px;
+}
+
+.contactHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contactHeader h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contactHeader p {
+    color: #666;
+}
+
+.contactWrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contactInfo {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(215, 215, 215) 1px 1px 5px;
+}
+
+.contactInfo h2 {
+    color: rgb(21, 88, 246);
+    margin-bottom: 20px;
+}
+
+.contactInfo p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+.contactForm {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(215, 215, 215) 1px 1px 5px;
+}
+
+.contactForm h2 {
+    color: rgb(21, 88, 246);
+    margin-bottom: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: rgb(173, 174, 187) solid 1px;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(21, 88, 246);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm button:hover {
+    background-color: rgb(21, 79, 214);
+    transition: 300ms;
+}

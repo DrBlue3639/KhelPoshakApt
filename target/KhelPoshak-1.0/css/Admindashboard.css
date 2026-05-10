@@ -13,41 +13,6 @@ body {
   background-color: #f5f8ff;
 }
 
-.navContainer {
-  display: flex;
-  padding: 15px;
-  padding-inline: 50px;
-  justify-content: space-between;
-  background-color: #ffffff;
-  /* position: fixed; */
-  border-bottom: rgb(224, 224, 224) solid 3px;
-  align-items: center;
-  border-bottom: 3px solid rgb(20, 87, 242);
-  width: 100%;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: black;
-}
-
-.navigation ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  align-items: center;
-}
-
-.navigation a {
-  color: black;
-}
-
-.navigation a:hover {
-  color: rgb(21, 88, 246);
-}
-
 .admintop {
   text-align: center;
   padding: 50px 20px;

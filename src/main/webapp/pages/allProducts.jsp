@@ -38,7 +38,7 @@
             </div>-->
         <!-- NAVBAR TEMPLATE -->
         <jsp:include page="/templates/navbar.jsp">
-            <jsp:param name="active" value="home"/>
+            <jsp:param name="active" value="products"/>
         </jsp:include>
 
         <!-- HEADER -->
@@ -134,6 +134,9 @@
         <div class="backContainer">
             <a href="${pageContext.request.contextPath}/homeS">← Back to Home</a>
         </div>
+        
+        <!--footer from template:  used directive include tag because of static HTML-->
+        <%@include file="/templates/footer.html" %>
 
     </body>
 </html>
