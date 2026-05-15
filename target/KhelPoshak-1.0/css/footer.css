@@ -8,9 +8,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 */
 
 .footer {
-    background-color: black; /* Dark navy background */
+    background-color: black;
     color: #ffffff;
     padding: 60px 8% 30px 8%;
+    /*border: solid 2px red;*/
 }
 
 .footer-container {
@@ -20,6 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    /*border: solid 2px red;*/
 }
 
 .footer-col {

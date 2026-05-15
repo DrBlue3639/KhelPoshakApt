@@ -83,20 +83,28 @@
                         />
 
                     <label>Password</label>
-                    <input
-                        type="password"
-                        placeholder="Enter password"
-                        name="password"
-                        required
-                        />
+                    <div class="passwordBox">
+                        <input
+                            type="password"
+                            placeholder="Enter password"
+                            name="password"
+                            id="password"
+                            required
+                            />
+                        <span class="toggleEye" onclick="togglePassword('password', this)">👁</span>
+                    </div>
 
                     <label>Confirm Password</label>
-                    <input
-                        type="password"
-                        placeholder="Confirm password"
-                        name="cfpassword"
-                        required
-                        />
+                    <div class="passwordBox">
+                        <input
+                            type="password"
+                            placeholder="Confirm password"
+                            name="cfpassword"
+                            id="cfpassword"
+                            required
+                            />
+                        <span class="toggleEye" onclick="togglePassword('cfpassword', this)">👁</span>
+                    </div>
                     <label>Phone</label>
                     <input type="tel" name="phone" value="${param.phone}" />
 
@@ -111,6 +119,19 @@
                 </form>
             </div>
         </div>
+        <script>
+            function togglePassword(id,icon) {
+                const input = document.getElementById(id);
+
+                if (input.type === "password") {
+                    input.type = "text";
+                    icon.textContent = "🙈";
+                } else {
+                    input.type = "password";
+                    icon.textContent = "👁";
+                }
+            }
+        </script>
     </body>
 </html>
 

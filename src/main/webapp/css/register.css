@@ -45,6 +45,26 @@
   font-size: 15px;
 }
 
+/*eye button*/
+.passwordBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.passwordBox input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggleEye {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+}
+
 /* Button */
 .registerBtn {
   margin-top: 10px;

@@ -80,8 +80,7 @@
                         <div class="product-img">
                             <c:if test="${not empty p.imageUrl}">
                                 <img src="${pageContext.request.contextPath}/${p.imageUrl}" 
-                                     alt="${p.name}"
-                                     style="width: 100%; height: 180px; object-fit: cover;">
+                                     alt="${p.name}">
                             </c:if>
                             <c:if test="${empty p.imageUrl}">
                                 <div style="width: 100%; height: 180px; background: #ddd; display: flex; align-items: center; justify-content: center;">
@@ -115,15 +114,15 @@
             </div>
         </div>
 
-        <!-- SHOP BY SPORT -->
+        <!-- What we have for you section -->
         <div class="shopSection">
-            <h2>Shop by Sport</h2>
+            <h2>What we have for you!!!</h2>
 
             <div class="sportGrid">
 
                 <div class="sportCard footballCard">
-                    <h3>Football</h3>
-                    <p>Browse Football jerseys</p>
+                        <h3>Football</h3>
+                        <p>Browse Football jerseys</p>
                 </div>
 
                 <div class="sportCard cricketCard">

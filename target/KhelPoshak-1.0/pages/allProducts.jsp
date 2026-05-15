@@ -94,11 +94,10 @@
                         <div class="product-img">
                             <c:if test="${not empty p.imageUrl}">
                                 <img src="${pageContext.request.contextPath}/${p.imageUrl}" 
-                                     alt="${p.name}"
-                                     style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                     alt="${p.name}">
                             </c:if>
                             <c:if test="${empty p.imageUrl}">
-                                <div style="width: 100%; height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <div style="width: 100%; height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px; ">
                                     No Image
                                 </div>
                             </c:if>

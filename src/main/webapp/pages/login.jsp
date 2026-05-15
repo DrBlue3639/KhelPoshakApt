@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login.css">
         <title>Login to KhelPoshak</title>
     </head>
@@ -60,13 +61,18 @@
                     <input type="email" placeholder="Enter your email" name="email" required
                            value="${cookie.userEmail != null ? cookie.userEmail.value : ''}">
 
+
                     <label>Password</label>
-                    <input
-                        type="password"
-                        placeholder="Enter your password"
-                        name="password"
-                        required
-                        />
+                    <div class="passwordBox">
+                        <input
+                            type="password"
+                            placeholder="Enter your password"
+                            name="password"
+                            id="password"
+                            required
+                            />
+                        <span class="toggleEye" onclick="togglePassword()">👁</span>
+                    </div>
 
                     <!-- <label>Select Role</label>
                     <div class="roleSelection">
@@ -88,6 +94,20 @@
                 </form>
             </div>
         </div>
+        <script>
+            function togglePassword() {
+                const password = document.getElementById("password");
+                const eye = document.querySelector(".toggleEye");
+
+                if (password.type === "password") {
+                    password.type = "text";
+                    eye.textContent = "🙈";
+                } else {
+                    password.type = "password";
+                    eye.textContent = "👁";
+                }
+            }
+        </script>
     </body>
 </html>
 
