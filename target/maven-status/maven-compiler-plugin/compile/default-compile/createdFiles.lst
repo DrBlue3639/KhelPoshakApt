@@ -1,4 +1,6 @@
 com\khel\khelposhak\dao\LoginDao.class
+com\khel\khelposhak\utils\ImageUtil.class
+com\khel\khelposhak\controller\UserProfileServlet.class
 com\khel\khelposhak\controller\filters\AuthenticationFilter.class
 com\khel\khelposhak\controller\RegisterServlet.class
 com\khel\khelposhak\controller\LoginServlet.class
@@ -11,7 +13,7 @@ com\khel\khelposhak\controller\AllProductsServlet.class
 com\khel\khelposhak\utils\ValidationUtil.class
 com\khel\khelposhak\dao\RegisterDao.class
 com\khel\khelposhak\model\CartModel.class
-com\khel\khelposhak\model\ContactModel.class
+com\khel\khelposhak\controller\AdminAnalyticsServlet.class
 com\khel\khelposhak\model\CategoryModel.class
 com\khel\khelposhak\model\ProductModel.class
 com\khel\khelposhak\resources\JakartaEE11Resource.class
@@ -19,6 +21,7 @@ com\khel\khelposhak\utils\PasswordUtil.class
 com\khel\khelposhak\dao\OrderDao.class
 com\khel\khelposhak\controller\LogoutServlet.class
 com\khel\khelposhak\controller\HomeServlet.class
+com\khel\khelposhak\utils\CookieUtil.class
 com\khel\khelposhak\controller\OrderHistoryServlet.class
 com\khel\khelposhak\model\UserModel.class
 com\khel\khelposhak\controller\CartServlet.class

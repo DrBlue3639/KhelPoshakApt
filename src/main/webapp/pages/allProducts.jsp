@@ -91,13 +91,22 @@
 
                 <c:forEach var="p" items="${products}">
                     <div class="product-card">
-
-                        <div class="product-img"></div>
-
+                        <div class="product-img">
+                            <c:if test="${not empty p.imageUrl}">
+                                <img src="${pageContext.request.contextPath}/${p.imageUrl}" 
+                                     alt="${p.name}"
+                                     style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                            </c:if>
+                            <c:if test="${empty p.imageUrl}">
+                                <div style="width: 100%; height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                    No Image
+                                </div>
+                            </c:if>
+                        </div>
                         <h3>${p.name}</h3>
                         <p class="team">${p.team} | ${p.sport}</p>
                         <p class="price">$${p.price}</p>
-
+                        <!-- Rest of your form -->
                         <form action="${pageContext.request.contextPath}/CartS" method="post" class="cartForm">
 
                             <input type="hidden" name="action" value="add">
@@ -118,10 +127,8 @@
 
                             <button type="submit" class="cartBtn">Add to Cart</button>
                         </form>
-
                     </div>
                 </c:forEach>
-
             </div>
         </div>
 
@@ -134,7 +141,7 @@
         <div class="backContainer">
             <a href="${pageContext.request.contextPath}/homeS">← Back to Home</a>
         </div>
-        
+
         <!--footer from template:  used directive include tag because of static HTML-->
         <%@include file="/templates/footer.html" %>
 

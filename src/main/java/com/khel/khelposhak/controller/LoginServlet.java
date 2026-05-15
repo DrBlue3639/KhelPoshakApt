@@ -4,11 +4,9 @@ import com.khel.khelposhak.dao.LoginDao;
 import com.khel.khelposhak.model.UserModel;
 import com.khel.khelposhak.utils.PasswordUtil;
 import com.khel.khelposhak.utils.SessionUtil;
-
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.WebServlet;
-
 import java.io.IOException;
 
 @WebServlet(name = "Login", urlPatterns = {"/LogServ"})
@@ -19,22 +17,32 @@ public class LoginServlet extends HttpServlet {
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        
 
         LoginDao logDao = new LoginDao();
         UserModel userModel = logDao.getUserByEmail(email);
 
         if (userModel == null) {
-            request.setAttribute("error", "invalid email or password");
+            request.setAttribute("error", "Invalid email or password");
             request.getRequestDispatcher("/pages/login.jsp").forward(request, response);
             return;
         }
 
         String storedPassword = userModel.getPassword();
-
         boolean matched = PasswordUtil.checkPassword(password, storedPassword);
-        //when bycrpt pw is correct 
+        
         if (matched) {
             SessionUtil.setAttribute(request, "user", userModel);
+
+            Cookie emailCookie = new Cookie("userEmail", email);
+            emailCookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
+            emailCookie.setPath("/");
+            response.addCookie(emailCookie);
+            
+            Cookie nameCookie = new Cookie("userName", userModel.getFullName());
+            nameCookie.setMaxAge(60 * 60 * 24 * 30);
+            nameCookie.setPath("/");
+            response.addCookie(nameCookie);
 
             HttpSession session = request.getSession();
             String redirectAfterLogin = (String) session.getAttribute("redirectAfterLogin");
@@ -50,6 +58,9 @@ public class LoginServlet extends HttpServlet {
             } else {
                 response.sendRedirect(request.getContextPath() + "/homeS");
             }
+        } else {
+            request.setAttribute("error", "Invalid email or password");
+            request.getRequestDispatcher("/pages/login.jsp").forward(request, response);
         }
     }
 }

@@ -76,19 +76,28 @@
 
                 <c:forEach var="p" items="${products}">
                     <div class="product-card">
-
-                        <!-- IMAGE PLACEHOLDER -->
-                        <div class="product-img"></div>
+                        <!-- Add image display -->
+                        <div class="product-img">
+                            <c:if test="${not empty p.imageUrl}">
+                                <img src="${pageContext.request.contextPath}/${p.imageUrl}" 
+                                     alt="${p.name}"
+                                     style="width: 100%; height: 180px; object-fit: cover;">
+                            </c:if>
+                            <c:if test="${empty p.imageUrl}">
+                                <div style="width: 100%; height: 180px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                                    No Image
+                                </div>
+                            </c:if>
+                        </div>
 
                         <h3>${p.name}</h3>
                         <p class="team">${p.team}</p>
                         <p class="price">$${p.price}</p>
 
-                        <!-- ALWAYS ADD TO CART (Correct Backend Logic) -->
+                        <!-- Rest of your form remains same -->
                         <form action="${pageContext.request.contextPath}/CartS" method="post">
                             <input type="hidden" name="action" value="add">
                             <input type="hidden" name="product_id" value="${p.productId}">
-
                             <select name="size" required class="sizeSelection">
                                 <option value="">Size</option>
                                 <option value="S">S</option>
@@ -97,14 +106,9 @@
                                 <option value="XL">XL</option>
                                 <option value="XXL">XXL</option>
                             </select>
-
                             <input type="hidden" name="quantity" value="1">
-
-                            <button type="submit" class="buyBtn">
-                                Add to Cart
-                            </button>
+                            <button type="submit" class="buyBtn">Add to Cart</button>
                         </form>
-
                     </div>
                 </c:forEach>
 

@@ -47,7 +47,7 @@
         <!-- main Admin Panel Body  -->
         <div class="admintop">
             <h1>Admin Dashboard</h1>
-            <p>Welcome${sessionScope.user.fullName}</p>
+            <p>Welcome ${sessionScope.user.fullName}</p>
             <br />
             <hr />
         </div>
@@ -65,14 +65,14 @@
                   >Add Product</a
                 > -->
             </div>
-            <div class="manageOrder">
-                <!-- <a href="orders.jsp">Manage Orders</a> -->
-                <a href="${pageContext.request.contextPath}/pages/manageOrders.jsp">Manage Orders</a>
-            </div>
-            <div class="manageUsers">
-                <!-- <a href="users.jsp">Manage Users</a> -->
-                <a href="${pageContext.request.contextPath}/pages/manageUsers.jsp">Manage Users</a>
-            </div>
+            <!--            <div class="manageOrder">
+                             <a href="orders.jsp">Manage Orders</a> 
+                            <a href="${pageContext.request.contextPath}/pages/manageOrders.jsp">Manage Orders</a>
+                        </div>
+                        <div class="manageUsers">
+                             <a href="users.jsp">Manage Users</a> 
+                            <a href="${pageContext.request.contextPath}/pages/manageUsers.jsp">Manage Users</a>
+                        </div>-->
         </div>
     </body>
 </html>

@@ -34,6 +34,12 @@
     <nav class="navigation">
 
         <ul>
+            <li>
+                <a href="${pageContext.request.contextPath}/ProfileS"
+                   class="${param.active == 'profile' ? 'active' : ''}">
+                    My Profile
+                </a>
+            </li>
 
             <li>
                 <a href="${pageContext.request.contextPath}/homeS"
@@ -51,14 +57,14 @@
 
             <li>
                 <a href="${pageContext.request.contextPath}/pages/about.jsp"
-                    class="${param.active == 'aboutus' ? 'active' : ''}">
+                   class="${param.active == 'aboutus' ? 'active' : ''}">
                     About Us
                 </a>
             </li>
 
             <li>
                 <a href="${pageContext.request.contextPath}/pages/contact.jsp"
-                    class="${param.active == 'contactus' ? 'active' : ''}">
+                   class="${param.active == 'contactus' ? 'active' : ''}">
                     Contact Us
                 </a>
             </li>
@@ -89,6 +95,7 @@
                         Logout
                     </a>
                 </li>
+
 
             </c:if>
 

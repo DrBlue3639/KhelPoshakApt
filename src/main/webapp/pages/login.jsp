@@ -57,12 +57,8 @@
                     class="loginForm"
                     >
                     <label>Email</label>
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        name="email"
-                        required
-                        />
+                    <input type="email" placeholder="Enter your email" name="email" required
+                           value="${cookie.userEmail != null ? cookie.userEmail.value : ''}">
 
                     <label>Password</label>
                     <input
