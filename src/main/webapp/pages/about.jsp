@@ -117,23 +117,31 @@
                 <h2>Meet Our Team</h2>
 
                 <div class="teamCards">
-
-                    <div class="teamCard">
-                        <div class="teamIcon"></div>
-                        <h3>Founder</h3>
-                        <p>Leading Khel Poshak with passion for sports.</p>
+                    <div class="teamCard-A">
+                        <div class="teamCard" id="teamCardA">
+                            <div class="teamIcon">
+                                <img src="${pageContext.request.contextPath}/resources/anuzzz.jpg" alt="alt"/>
+                            </div>
+                            <h3>Founder</h3>
+                            <p>Leading Khel Poshak with passion for sports.</p>
+                        </div>
                     </div>
+                    <div class="teamCard-B">
+                        <div class="teamCard" id="teamCardB">
+                            <div class="teamIcon">
+                              <img src="${pageContext.request.contextPath}/resources/group2.jpg" alt="alt"/>  
+                            </div>
+                            <h3>Design Team</h3>
+                            <p>Creating stylish and modern jersey collections.</p>
+                        </div>
 
-                    <div class="teamCard">
-                        <div class="teamIcon"></div>
-                        <h3>Design Team</h3>
-                        <p>Creating stylish and modern jersey collections.</p>
-                    </div>
-
-                    <div class="teamCard">
-                        <div class="teamIcon"></div>
-                        <h3>Delivery Team</h3>
-                        <p>Ensuring safe and fast delivery across Nepal.</p>
+                        <div class="teamCard" id="teamCardB">
+                            <div class="teamIcon">
+                                <img src="${pageContext.request.contextPath}/resources/deliveryTeamC.jpg" alt="alt"/>
+                            </div>
+                            <h3>Delivery Team</h3>
+                            <p>Ensuring safe and fast delivery across Nepal.</p>
+                        </div>
                     </div>
 
                 </div>

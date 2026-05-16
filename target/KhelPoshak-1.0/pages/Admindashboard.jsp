@@ -61,9 +61,11 @@
                 <a href="${pageContext.request.contextPath}/ProdS?action=add"
                    >Add Product</a
                 >
-                <!-- <a href="${pageContext.request.contextPath}/ProdS?action=add"
-                  >Add Product</a
-                > -->
+            </div>
+            <div class="addProducts">
+                <a href="${pageContext.request.contextPath}/AdminDashboardS"
+                   >View Analytics</a
+                >
             </div>
             <!--            <div class="manageOrder">
                              <a href="orders.jsp">Manage Orders</a> 

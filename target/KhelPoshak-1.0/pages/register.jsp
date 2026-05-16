@@ -69,7 +69,7 @@
                         type="text"
                         placeholder="Enter your full name"
                         name="fullname"
-                        value="${param.fullName}"
+                        value="${param.fullname}"
                         required
                         />
 
@@ -91,7 +91,7 @@
                             id="password"
                             required
                             />
-                        <span class="toggleEye" onclick="togglePassword('password', this)">👁</span>
+                        <span class="toggleEye" onclick="togglePassword('password', this)">&#128065;️</span>
                     </div>
 
                     <label>Confirm Password</label>
@@ -103,7 +103,7 @@
                             id="cfpassword"
                             required
                             />
-                        <span class="toggleEye" onclick="togglePassword('cfpassword', this)">👁</span>
+                        <span class="toggleEye" onclick="togglePassword('cfpassword', this)">&#128065;️</span>
                     </div>
                     <label>Phone</label>
                     <input type="tel" name="phone" value="${param.phone}" />
@@ -128,10 +128,9 @@
                     icon.textContent = "🙈";
                 } else {
                     input.type = "password";
-                    icon.textContent = "👁";
+                    icon.textContent = "👁️";
                 }
             }
         </script>
     </body>
 </html>
-

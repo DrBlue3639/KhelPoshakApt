@@ -71,7 +71,7 @@
                             id="password"
                             required
                             />
-                        <span class="toggleEye" onclick="togglePassword()">👁</span>
+                        <span class="toggleEye" onclick="togglePassword()">&#128065;</span>
                     </div>
 
                     <!-- <label>Select Role</label>

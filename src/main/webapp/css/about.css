@@ -1,18 +1,20 @@
-
 .aboutContainer {
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
 }
 
+/* ===== HEADER ===== */
+
 .aboutHeader {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .aboutHeader h1 {
-    font-size: 40px;
-    color: #0d47a1;
+    font-size: 42px;
+    color: rgb(21, 88, 246);
+    margin-bottom: 10px;
 }
 
 .aboutHeader p {
@@ -20,144 +22,231 @@
     font-size: 16px;
 }
 
-/* ===== ABOUT CARDS ===== */
+/* ===== ABOUT CONTENT ===== */
 
 .aboutContent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .aboutCard {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
     transition: 0.3s;
 }
 
 .aboutCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .aboutCard h2 {
-    color: #1565c0;
-    margin-bottom: 10px;
-    font-size: 20px;
+    color: rgb(21, 88, 246);
+    margin-bottom: 12px;
+    font-size: 22px;
 }
 
 .aboutCard p {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 15px;
 }
 
-/* icon placeholder */
+/* ICON */
+
 .cardIcon {
-    width: 40px;
-    height: 40px;
-    background: #e3f2fd;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 55px;
+    height: 55px;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    background: rgba(21, 88, 246, 0.1);
 }
 
-/* ===== STATS SECTION ===== */
+/* ===== STATS ===== */
 
 .statsSection {
-    margin-top: 50px;
+    margin-top: 70px;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
 }
 
 .statCard {
-    background: #1565c0;
-    color: #fff;
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px 20px;
+
     text-align: center;
-    padding: 25px;
-    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
     transition: 0.3s;
 }
 
 .statCard:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
 .statCard h2 {
-    font-size: 32px;
-    margin-bottom: 5px;
+    color: rgb(21, 88, 246);
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
 }
 
-/* ===== TEAM SECTION ===== */
+.statCard p {
+    color: #555;
+}
+
+/* ===== TEAM ===== */
 
 .teamSection {
-    margin-top: 60px;
+    margin-top: 80px;
     text-align: center;
 }
 
 .teamSection h2 {
-    font-size: 32px;
-    color: #0d47a1;
-    margin-bottom: 25px;
+    font-size: 36px;
+    color: rgb(21, 88, 246);
+    margin-bottom: 35px;
 }
 
 .teamCards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    /*width: 100%;*/
+    display: flex;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#teamCardB {
+    width: 600px;
+    /*border: red solid 2px;*/
+    
+}
+#teamCardB img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.teamCard-B {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*border: red solid 2px;*/
+    gap: 25px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .teamCard {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    /*border: red solid 2px;*/
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
 .teamCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 }
 
-.teamIcon {
-    width: 50px;
-    height: 50px;
-    background: #e3f2fd;
+#teamCardA img {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin: 0 auto 10px;
 }
 
-/* ===== CTA SECTION ===== */
+.teamCard h3 {
+    margin-bottom: 10px;
+    color: rgb(21, 88, 246);
+}
+
+.teamCard p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===== CTA ===== */
 
 .aboutCTA {
-    margin-top: 60px;
+    margin-top: 80px;
+
+    background: linear-gradient(
+        to right,
+        rgb(21, 88, 246),
+        rgb(63, 125, 255)
+        );
+
+    border-radius: 22px;
+
+    padding: 60px 30px;
+
     text-align: center;
-    background: linear-gradient(135deg, #1565c0, #42a5f5);
-    padding: 40px;
-    border-radius: 16px;
+
     color: white;
 }
 
 .aboutCTA h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
 .aboutCTA p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 17px;
 }
 
 .shopBtn {
     display: inline-block;
-    padding: 12px 25px;
-    background: #fff;
-    color: #1565c0;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
+
+    padding: 14px 30px;
+
+    background: white;
+
+    color: rgb(21, 88, 246);
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
     transition: 0.3s;
 }
 
 .shopBtn:hover {
-    background: #0d47a1;
-    color: #fff;
+    background: black;
+    color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .aboutHeader h1{
+        font-size:32px;
+    }
+
+    .teamSection h2,
+    .aboutCTA h2{
+        font-size:28px;
+    }
+
+    .aboutCTA{
+        padding:40px 20px;
+    }
 }
